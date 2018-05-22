@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "403339880791",
+    "firebase_url": "https://blogapp-26330.firebaseio.com",
+    "project_id": "blogapp-26330",
+    "storage_bucket": "blogapp-26330.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403339880791:android:83d92e2474680e89",
+        "android_client_info": {
+          "package_name": "com.example.dell.blogapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403339880791-87m24647ocj18010ilhu4usn5og5bno4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.blogapp",
+            "certificate_hash": "6c1da9a107449fa2b0fb4fee94dddbeca3e67699"
+          }
+        },
+        {
+          "client_id": "403339880791-jefqn9g4sucjno2g53d6ga9mhj8e0buo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxCKvtRs3ahdtFCky3WsQ623mPfDWK1uA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403339880791-jefqn9g4sucjno2g53d6ga9mhj8e0buo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
