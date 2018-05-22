@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login_page_log" />
+        app:srcCompat="@drawable/common_full_open_on_phone" />
 
     <EditText
         android:id="@+id/loginEmail"
