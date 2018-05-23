@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/regLogoPage"
@@ -23,10 +23,10 @@
     <EditText
         android:id="@+id/regEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="52dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="55dp"
         android:ems="10"
         android:hint="@string/Email_hint"
         android:inputType="textEmailAddress"
@@ -44,16 +44,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="@string/pass_hint"
+        android:hint="@string/regConfirmPasswordText"
         android:inputType="textPassword"
         android:padding="16dp"
         android:textColorHint="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/regPassword" />
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/regBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -62,31 +62,32 @@
         android:background="@android:color/holo_red_dark"
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
-        android:text="@string/login_btn_text"
+        android:text="@string/regBtnText"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/regConfirmPassword" />
 
     <Button
-        android:id="@+id/loginRegBtn"
+        android:id="@+id/regLoginBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@color/common_google_signin_btn_text_dark_default"
-        android:text="@string/login_reg_btn_text"
+        android:text="@string/regLoginText"
         android:textAllCaps="false"
         android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
-        android:id="@+id/loginProgressBar"
+        android:id="@+id/regProgressBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -95,4 +96,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/regPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/regPasswordText"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regEmail" />
+
 </android.support.constraint.ConstraintLayout>

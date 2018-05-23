@@ -5,4 +5,11 @@
     <string name="login_logo">Logo Login Page</string>
     <string name="login_btn_text">Login to Account</string>
     <string name="login_reg_btn_text">NEED A NEW ACCOUNT ?</string>
+    <string name="action_search_text">search</string>
+    <string name="action_settings_text">Settings</string>
+    <string name="action_logout_text">Logout</string>
+    <string name="regLoginText">Already have an Account?</string>
+    <string name="regBtnText">Create Account</string>
+    <string name="regPasswordText">Password...</string>
+    <string name="regConfirmPasswordText">ConfirmPassword...</string>
 </resources>
