@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private android.support.v7.widget.Toolbar mainToolBar;
 
     private FirebaseAuth mAuth;
-
+    // Amisha
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
