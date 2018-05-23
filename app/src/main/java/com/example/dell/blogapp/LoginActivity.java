@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
 
 
+    //hello hello hello
     private EditText loginEmailText;
     private EditText loginPasswordText;
     private Button loginButton;
