@@ -12,4 +12,6 @@
     <string name="regBtnText">Create Account</string>
     <string name="regPasswordText">Password...</string>
     <string name="regConfirmPasswordText">ConfirmPassword...</string>
+    <string name="setup_name_hint">Your Name...</string>
+    <string name="setup_btn_name_text">Save Account Settings</string>
 </resources>

@@ -63,7 +63,10 @@ public class RegisterActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful())
                                 {
-                                    sendToMain();
+                                    //If registration is done send to setup activity
+                                    Intent setupIntent =  new Intent(RegisterActivity.this,SetupActivity.class);
+                                    startActivity(setupIntent);
+                                    finish();
                                 }
                                 else {
                                     String e=task.getException().getMessage();
@@ -87,7 +90,21 @@ public class RegisterActivity extends AppCompatActivity {
 
                 }
             }
-        });
+        });   // regBtn function ends here
+
+
+
+       /* regLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent loginIntent=new Intent(RegisterActivity.this,LoginActivity.class);
+                startActivity(loginIntent);
+                finish();
+            }
+        });*/
+
+       //onCreate method ends here
+
     }
 
     @Override
