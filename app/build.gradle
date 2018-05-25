@@ -25,11 +25,15 @@ dependencies {
 
     //implementation 'com.google.firebase:firebase-auth:16.0.1'
     //implementation 'com.google.firebase:firebase-storage:16.0.1'
-      implementation 'com.google.firebase:firebase-auth:11.6.0'
-      implementation 'com.google.firebase:firebase-storage:11.8.0'
+    implementation 'com.google.firebase:firebase-auth:15.1.0'
+    implementation 'com.google.firebase:firebase-storage:15.0.2'
+    implementation 'com.google.firebase:firebase-firestore:16.0.0'
+
     // Library for circular imageview
     compile 'de.hdodenhof:circleimageview:2.2.0'
-
+    //Lib for retrieving images
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
     //Lib for crop image
     compile 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
 

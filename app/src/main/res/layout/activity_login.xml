@@ -26,15 +26,16 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="@string/Email_hint"
         android:inputType="textEmailAddress"
         android:padding="16dp"
         android:textColorHint="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regLogoPage" />
+        app:layout_constraintTop_toBottomOf="@+id/loginLogo" />
 
     <EditText
         android:id="@+id/loginPassword"
@@ -59,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:background="@android:color/holo_red_dark"
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
