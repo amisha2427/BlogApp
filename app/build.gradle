@@ -32,8 +32,8 @@ dependencies {
     // Library for circular imageview
     compile 'de.hdodenhof:circleimageview:2.2.0'
     //Lib for retrieving images
-    implementation 'com.github.bumptech.glide:glide:4.7.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
     //Lib for crop image
     compile 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
 
