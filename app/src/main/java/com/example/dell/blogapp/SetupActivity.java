@@ -102,7 +102,7 @@ public class SetupActivity extends AppCompatActivity {
                 } else {
 
                     String error = task.getException().getMessage();
-                    Toast.makeText(SetupActivity.this,"(Firestore Error) : " + error , Toast.LENGTH_LONG).show();
+                    Toast.makeText(SetupActivity.this,"(Firestore Retrieve Error) : " + error , Toast.LENGTH_LONG).show();
                 }
                 setUpProgressBar.setVisibility(View.INVISIBLE);
                 setUpBtn.setEnabled(true);
@@ -114,40 +114,39 @@ public class SetupActivity extends AppCompatActivity {
             public void onClick(View v) {
                 user_name = setUpName.getText().toString();
                 setUpProgressBar.setVisibility(View.VISIBLE);
-
-                if (isChanged)
-                {
-                    if (!TextUtils.isEmpty(user_name) && mainImageURI != null) {
-
-                        user_id = mfirebaseAuth.getCurrentUser().getUid();
+                if (!TextUtils.isEmpty(user_name) && mainImageURI != null) {
+                    if (isChanged)
+                    {
+                            user_id = mfirebaseAuth.getCurrentUser().getUid();
 
 
-                        StorageReference image_path = mstorageReference.child("profile_images").child(user_id + ".jpg");
-                        image_path.putFile(mainImageURI).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
-                            @Override
-                            public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                            StorageReference image_path = mstorageReference.child("profile_images").child(user_id + ".jpg");
+                            image_path.putFile(mainImageURI).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+                                @Override
+                                public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
 
-                                if (task.isSuccessful()) {
+                                    if (task.isSuccessful()) {
 
-                                    storeFiresote(task, user_name);
-                                } else {
-                                    String error = task.getException().getMessage();
-                                    Toast.makeText(SetupActivity.this, " Image Error: " + error, Toast.LENGTH_LONG).show();
+                                        storeFiresote(task, user_name);
+                                    } else {
+                                        String error = task.getException().getMessage();
+                                        Toast.makeText(SetupActivity.this, " Image Error: " + error, Toast.LENGTH_LONG).show();
 
-                                    setUpProgressBar.setVisibility(View.INVISIBLE);
+                                        setUpProgressBar.setVisibility(View.INVISIBLE);
+
+                                    }
+
 
                                 }
+                            });
 
-
-                            }
-                        });
-
+                        }
+                    else {
+                        storeFiresote(null,user_name );
                     }
             }
 
-            else {
-                    storeFiresote(null,user_name );
-                }
+
             }
         });
 

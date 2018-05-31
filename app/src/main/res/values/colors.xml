@@ -3,4 +3,7 @@
     <color name="colorPrimary">#2196f3</color>
     <color name="colorPrimaryDark">#0069c0</color>
     <color name="colorAccent">#f43f36</color>
+
+    <color name="likeBtnGray">#747474</color>
+    <color name="likeBtnAccent">#F44336</color>
 </resources>
